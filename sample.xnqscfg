@@ -1,0 +1,20 @@
+# This is an xnqscfg comment.
+#
+# xnqscfg has two data types: strings and arrays. Arrays can also include other arrays, so you can generalize to higher dimensions for whatever reason.
+#
+# Strings can include pretty much any character, even actual newlines.
+# Array elements can be separated by commas and/or spaces.
+#
+# xnqscfg variable names can consist of lower/uppercase alphanumeric characters and underscores.
+
+name = "xnqs
+, heck yeah baby" # Example of a multi-line string
+
+array = {"a", "b", "c"}; # you can also use semicolons if you want
+array2 = {{"a", "b", "c"},
+          {"d", "e", "f"},
+		  {"g", "h"}}
+
+ugly_formatting
+=   "\"why would you ever format your code like this? idk, just to prove a point i guess\"
+- xnqs, probably"; # example of ugly formatting and escaping double quotes
