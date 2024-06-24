@@ -91,6 +91,11 @@ parse_config_file(const std::filesystem::path& config_filepath) {
 		};
 
 		eval = [&]() {
+			// check for potentially malformed input (var = )
+			if (i >= tokens.size()) {
+				return 0;
+			}
+
 			int ret = 1;
 
 			// parse an array: call eval() recursively in curr's children
