@@ -3,8 +3,8 @@
 #include <string>
 #include <filesystem>
 
-#include "xnqscfg.hxx"
-#include "lexer.hxx"
+#include <xnqscfg/xnqscfg.hxx>
+#include <xnqscfg/lexer.hxx>
 
 void print_variable(xnqs::cfg::entry* node) {
 	if (node->type == xnqs::cfg::TypeString) {
