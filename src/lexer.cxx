@@ -12,6 +12,14 @@ namespace cfg {
 std::vector<std::string>
 run_lexer(const std::filesystem::path& config_path) {
 	std::vector<std::string> ret;
+
+	if (!std::filesystem::exists(config_path)) {
+		return ret;
+	}
+	if (!config_path.has_filename()) {
+		return ret;
+	}
+
 	std::ifstream fin(config_path.c_str());
 
 	if (!fin.good()) {
